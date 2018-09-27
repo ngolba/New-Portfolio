@@ -21,17 +21,16 @@
 
 <body>
 
-
-
     <div class="container centerY">
         <div id="phoneHolder">
             <img src="assets/images/phone.png" class="img-fluid  mx-auto" id="phoneImg">
             <div id="welcomeText">
-                <h3>Hello, my name is Nathan.</h3>
+                <h3 class="text-center px-2" id="greeting"></h3>
+                <!-- <h3 id="greeting">Hello, my name is Nathan.</h3> -->
                 <br>
-                <h5>I write code.</h5>
+                <h5 id="secondText"></h5>
             </div>
-            <div id="slideBox">
+            <div id="slideBox" style="display: none">
                 <input type="range" min="1" max="100" value="1" class="slider" id="slider">
                 <span id="slideText">...slide to open.</span>
             </div>
