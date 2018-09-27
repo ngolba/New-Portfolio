@@ -4,6 +4,9 @@ $('#slider').mousedown(() => {
 
 $('#slider').change(() => {
     if ($('#slider').val() === "100") {
-        console.log('done');
+        $('#welcomeText, #slideBox').fadeOut(200)
+        $('#phoneHolder').delay(200).slideUp(1000)
+        $('.centerY').delay(1200).fadeOut();
+        $('.afterStart').delay(1300).slideDown();
     }
 })

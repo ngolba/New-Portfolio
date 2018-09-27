@@ -10,6 +10,7 @@ body {
     background-image: url("../images/adam-smigielski-536767-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
 }
 
 /* Photo by Tyler Lastovich on Unsplash */
@@ -84,6 +85,10 @@ body {
     position: absolute;
     right: 0;
     top: 40%;
+}
+
+.afterStart {
+    display: none;
 }
 
 /* font-family: 'Playfair Display', serif;
