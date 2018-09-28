@@ -7,9 +7,10 @@
 }
 
 body {
-    background-image: url("../images/adam-smigielski-536767-unsplash.jpg");
-    background-size: cover;
+    background-image: url("../images/backgroundsMerged.jpg");
+    /* background-size: cover; */
     background-repeat: no-repeat;
+    background-position: 100%;
     height: 100vh;
     /* display: flex; */
 }
@@ -59,7 +60,7 @@ body {
     height: 50px;
     background: none;
     outline: none;
-    border-bottom: 2px solid white;
+    /* border-bottom: 2px solid white; */
     opacity: 0.8;
 }
 
@@ -90,6 +91,20 @@ body {
 
 .afterStart {
     display: none;
+}
+
+#techs {
+    background: none;
+}
+.techIcons {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    opacity: 0.5;
+}
+
+#selfie {
+    float: left;
 }
 
 /* font-family: 'Playfair Display', serif;
