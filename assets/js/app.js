@@ -131,6 +131,7 @@ $('#homeBtn').click(() => {
     $('#aboutMe').delay(500).slideDown(500)
     $('#portfolio').slideUp(500)
     $('body').animate({backgroundPositionY: '20%'})
+    fadeIcons(projects.reset)
 })
 
 
