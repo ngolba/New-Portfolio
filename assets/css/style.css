@@ -118,9 +118,9 @@ body {
     font-size: 20px;
 }
 
-#aboutHeader, #aboutBody{
+#aboutHeader, #aboutBody, #descriptionText{
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.219);
+    background-color: rgba(255, 255, 255, 0.664);
 }
 
 /* font-family: 'Playfair Display', serif;
