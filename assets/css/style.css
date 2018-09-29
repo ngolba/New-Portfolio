@@ -1,3 +1,7 @@
+* {
+    font-family: 'Slabo 27px', serif;
+}
+
 .centerY {
     min-height: 100%;
     min-height: 100vh;
@@ -7,18 +11,18 @@
 }
 
 body {
-    background-image: url("../images/backgroundsMerged.jpg");
-    /* background-size: cover; */
+    background-image: url("../images/mergedHD2.jpg");
     background-repeat: no-repeat;
     background-position: 100%;
     height: 100vh;
-    /* display: flex; */
+    width: 100%;
+    background-attachment: fixed;
 }
 
 /* Photo by Tyler Lastovich on Unsplash */
 /* Photo by freddie marriage on Unsplash */
 
-#welcomeText {
+.welcomeText {
     font-family: 'Roboto Mono', monospace;
     color: white;
     position: absolute;
@@ -27,6 +31,13 @@ body {
     text-shadow: 1px 1px black;
     opacity: 0.8;
 
+}
+
+#greeting,
+#secondText,
+#takeLook,
+#slideText {
+    font-family: 'Roboto Mono', monospace;
 }
 
 #phoneImg {
@@ -50,8 +61,12 @@ body {
 }
 
 #slideText {
+    font-size: 12px;
     float: right;
     opacity: 0.5;
+    position: absolute;
+    right: 0;
+    top: 40%;
 }
 
 .slider {
@@ -60,7 +75,6 @@ body {
     height: 50px;
     background: none;
     outline: none;
-    /* border-bottom: 2px solid white; */
     opacity: 0.8;
 }
 
@@ -83,11 +97,7 @@ body {
     cursor: pointer;
 }
 
-#slideText {
-    position: absolute;
-    right: 0;
-    top: 40%;
-}
+
 
 .afterStart {
     display: none;
@@ -96,16 +106,56 @@ body {
 #techs {
     background: none;
 }
+
 .techIcons {
     display: flex;
     justify-content: space-between;
     background: none;
-    opacity: 0.5;
 }
 
-#selfie {
-    float: left;
+
+#aboutMeText {
+    font-size: 20px;
+}
+
+#aboutHeader, #aboutBody{
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.219);
 }
 
 /* font-family: 'Playfair Display', serif;
 font-family: 'Roboto Mono', monospace; */
+
+@media (min-width: 1921px) {
+    body {
+        background-image: url('../images/merged4k2.jpg')
+    }
+}
+
+@media (max-width: 1920px) {
+    body {
+        background-image: url('../images/mergedHD2.jpg')
+    }
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {
+    #selfie {
+        width: 33%;
+    }
+}
+
+@media (max-width: 768px) {
+    #selfie {
+        width: 50%;
+        margin: 0 25%;
+    }
+}
+
+@media (max-width: 576px) {
+    #selfie {
+        width: 100%;
+        margin: 0;
+    }
+}
