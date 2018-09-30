@@ -207,8 +207,9 @@ const fadeIcons = (project) => {
 }
 
 const updateCarouselData = (project) => {
-    $('#carouselHeader').text(project.name);
+    $('#projectTitle').text(project.name);
     $('#descriptionText').text(project.description);
+    $('#carouselLink').attr('href', project.link);
     fadeIcons(project.techs);
 }
 
@@ -220,12 +221,28 @@ $(document).ready(() => {
 })
 
 $('#portBtn').click(() => {
+    $(".contactPage").slideUp(500)
     $('#aboutMe').slideUp(500)
     $('#footer').delay(1000).slideDown(500)
     $('#portfolio').delay(1500).slideDown(500)
     $('.backgroundImg').delay(500).animate({
-        backgroundPositionY: '0%'
+        backgroundPositionY: '0%',
+        backgroundPositionX: '0%'
     })
+    
+})
+
+$('#contactBtn').click(() => {
+    $('#aboutMe').slideUp(500)
+    $('#portfolio').slideUp(500)
+    $('#footer').delay(500).slideUp(500)
+    $('.backgroundImg').delay(500).animate({
+        backgroundPositionX: '100%'
+    }, 500).delay(200).animate({
+        backgroundPositionY: '80%'
+    }, 500)
+    $('.contactPage').delay(1500).slideDown(500);
+    $('#contactJumbo').delay(4000).fadeIn(500);
 })
 
 $('#homeBtn').click(() => {
@@ -233,9 +250,11 @@ $('#homeBtn').click(() => {
     $('#portfolio').slideUp(500)
     $('#footer').delay(500).slideUp(500)
     $('.backgroundImg').animate({
-        backgroundPositionY: '100%'
+        backgroundPositionY: '100%',
+        backgroundPositionX: '0%'
     })
     fadeIcons(projects.reset)
+    $(".contactPage").slideUp(500)
 })
 
 
@@ -243,9 +262,4 @@ $('#portfolioCarousel').on('slid.bs.carousel', () => {
     activeProject = projects[$('.carousel-item.active').attr('project')]
     updateCarouselData(activeProject);
 
-})
-
-$('#contactBtn').click(() => {
-    $('#contactBtn').slideUp(500)
-    $('#contactGroup').delay(500).slideDown(500)
 })

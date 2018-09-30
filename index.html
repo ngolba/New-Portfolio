@@ -55,20 +55,8 @@
                             <a class="nav-link" href="#" id="portBtn">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Contact</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="contactDropdown">
-                                <a class="dropdown-item" target="_blank" href="https://github.com/ngolba"><i class="fab fa-github"></i>
-                                    GitHub</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" target="_blank" href="https://www.linkedin.com/in/nathan-golba-666bb4162/"><i
-                                        class="fab fa-linkedin"></i> LinkedIn</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" target="_blank" href="https://stackoverflow.com/story/ngolba"><i
-                                        class="fab fa-stack-overflow"></i> Stack Overflow</a>
-                            </div>
+                            <a class="nav-link" href="#" id="contactBtn">Contact</a>
                         </li>
-
                     </ul>
                 </div>
             </nav>
@@ -98,42 +86,53 @@
             </div>
             <div class="container my-2" id="portfolio" style="display: none">
                 <div class="card">
-                    <h1 class="text-center card-header" id="carouselHeader"></h1>
+                    <h1 class="card-header text-center display-3" id="carouselHeader"><span id="projectTitle"></span>
+                        <a href='#' target="_empty" id="carouselLink"><i class="fas fa-external-link-alt fa-sm"></i></a></h1>
                     <div id="portfolioCarousel" class="carousel w-100 slide mx-auto" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#portfolioCarousel" data-slide-to="0" class="active"></li>
                             <li data-target="#portfolioCarousel" data-slide-to="1"></li>
                             <li data-target="#portfolioCarousel" data-slide-to="2"></li>
                             <li data-target="#portfolioCarousel" data-slide-to="3"></li>
+                            <li data-target="#portfolioCarousel" data-slide-to="4"></li>
+                            <li data-target="#portfolioCarousel" data-slide-to="5"></li>
+                            <li data-target="#portfolioCarousel" data-slide-to="6"></li>
                         </ol>
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active" project="mood">
                                 <img src="assets/images/moodSS.PNG" class="d-block w-100" alt="First slide">
                             </div>
-
+                            <div class="carousel-item" project="firstPortfolio">
+                                <img src="assets/images/firstportfolioSS.PNG" class="d-block w-100" alt="Second slide">
+                            </div>
+                            <div class="carousel-item" project="hangman">
+                                <img src="assets/images/hangmanSS.PNG" class="d-block w-100" alt="Third slide">
+                            </div>
                             <div class="carousel-item" project="pokemon">
-                                <img src="assets/images/pokemongif.gif" class="d-block w-100" alt="Third slide">
+                                <img src="assets/images/pokemongif.gif" class="d-block w-100" alt="Fourth slide">
+                            </div>
+                            <div class="carousel-item" project="trivia">
+                                <img src="assets/images/triviaSS.PNG" class="d-block w-100" alt="Fifth slide">
                             </div>
                             <div class="carousel-item" project="giphy">
-                                <img src="assets/images/giphyCapture.PNG" class="d-block w-100" alt="Fourth slide">
+                                <img src="assets/images/giphyCapture.PNG" class="d-block w-100" alt="Sixth slide">
                             </div>
                             <div class="carousel-item" project="rps">
-                                <img src="assets/images/rpsfullScreen.PNG" class="d-block w-100" alt="Second slide">
+                                <img src="assets/images/rpsfullScreen.PNG" class="d-block w-100" alt="Seventh slide">
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#portfolioCarousel" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <a class="carousel-control-prev carouselArrow" href="#portfolioCarousel" role="button"
+                            data-slide="prev">
+                            <i class="fas fa-arrow-left"></i>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next" href="#portfolioCarousel" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <a class="carousel-control-next carouselArrow" href="#portfolioCarousel" role="button"
+                            data-slide="next">
+                            <i class="fas fa-arrow-right"></i>
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
-                    <div class="text-center card-footer" id="descriptionText">Every day I set out to
-                        make
-                        my current project better than the last. Take a
-                        peek at my GitHub profile to see what I've been up to.</div>
+                    <div class="text-center card-footer" id="descriptionText"></div>
                 </div>
             </div>
             <div class="container text-center" id="footer" style="display: none">
@@ -149,6 +148,26 @@
                     <img class="mx-2" src="assets/images/jqueryIcon.png" height="50px" width="50px" id="jqueryIcon">
                     <img class="mx-2" src="assets/images/chromeExtensions.png" height="50px" width="50px" id="chromeIcon">
                     <img class="mx-2" src="assets/images/firebaseIcon.png" height="50px" width="50px" id="firebaseIcon">
+                </div>
+            </div>
+            <div class="contactPage" style="display:none">
+                <div class="container" id="jumboContainer">
+                    <div class="jumbotron mx-auto" id="contactJumbo">
+                        <div class="jumboWrapper text-center">
+                            <h1 class="display-3">Reach out to me.</h1>
+                            <div class="btn-group">
+                                <a class="btn btn-lg btn-dark" target="_blank" href="https://github.com/ngolba"><i
+                                        class="fab fa-github"></i>
+                                    GitHub</a>
+                                <a class="btn btn-lg btn-dark" target="_blank" href="https://www.linkedin.com/in/nathan-golba-666bb4162/"><i
+                                        class="fab fa-linkedin"></i>
+                                    LinkedIn</a>
+                                <a class="btn btn-lg btn-dark" target="_blank" href="https://stackoverflow.com/story/ngolba"><i
+                                        class="fab fa-stack-overflow"></i>
+                                    Stack Overflow</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
