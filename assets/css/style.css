@@ -138,9 +138,23 @@ body {
     background-color: rgba(255, 255, 255, 0.664);
 }
 
+a {
+    color: black;
+}
+
+.carouselArrow{
+    color: black !important;
+}
 /* font-family: 'Playfair Display', serif;
 font-family: 'Roboto Mono', monospace; */
+#contactJumbo {
+    background-color: rgba(214, 214, 214, 0.822);
+    margin: 20% auto;
+}
 
+#jumboWrapper {
+
+}
 @media (min-width: 1921px) {
     .backgroundImg {
         background-image: url('../images/merged4kQuad.jpg')
