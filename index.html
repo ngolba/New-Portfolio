@@ -7,7 +7,7 @@
     <title>Nathan Golba</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
 
@@ -86,8 +86,6 @@
             </div>
             <div class="container my-2" id="portfolio" style="display: none">
                 <div class="card">
-                    <h1 class="card-header text-center" id="carouselHeader"><span id="projectTitle"></span>
-                        <a href='#' target="_empty" id="carouselLink"><i class="fas fa-external-link-alt fa-sm"></i></a></h1>
                     <div id="portfolioCarousel" class="carousel w-100 slide mx-auto" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#portfolioCarousel" data-slide-to="0" class="active"></li>
@@ -132,7 +130,11 @@
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
-                    <div class="text-center card-footer" id="descriptionText"></div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center" id="carouselHeader"><span id="projectTitle"></span>
+                            <a href='#' target="_empty" id="carouselLink"><i class="fas fa-external-link-alt fa-sm"></i></a></h5>
+                        <p class="card-text text-center" id="descriptionText"></p>
+                    </div>
                 </div>
             </div>
             <div class="container text-center" id="footer" style="display: none">
@@ -155,15 +157,14 @@
                     <div class="jumbotron mx-auto" id="contactJumbo">
                         <div class="jumboWrapper text-center">
                             <h1>Reach out to me.</h1>
-                                <a class="btn btn-dark" target="_blank" href="https://github.com/ngolba"><i
-                                        class="fab fa-github"></i>
-                                    GitHub</a>
-                                <a class="btn btn-dark" target="_blank" href="https://www.linkedin.com/in/nathan-golba-666bb4162/"><i
-                                        class="fab fa-linkedin"></i>
-                                    LinkedIn</a>
-                                <a class="btn btn-dark" target="_blank" href="https://stackoverflow.com/story/ngolba"><i
-                                        class="fab fa-stack-overflow"></i>
-                                    Stack Overflow</a>
+                            <a class="btn btn-dark" target="_blank" href="https://github.com/ngolba"><i class="fab fa-github"></i>
+                                GitHub</a>
+                            <a class="btn btn-dark" target="_blank" href="https://www.linkedin.com/in/nathan-golba-666bb4162/"><i
+                                    class="fab fa-linkedin"></i>
+                                LinkedIn</a>
+                            <a class="btn btn-dark" target="_blank" href="https://stackoverflow.com/story/ngolba"><i
+                                    class="fab fa-stack-overflow"></i>
+                                Stack Overflow</a>
                         </div>
                     </div>
                 </div>
