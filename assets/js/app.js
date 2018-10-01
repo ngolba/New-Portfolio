@@ -219,3 +219,5 @@ $('#portfolioCarousel').on('slid.bs.carousel', () => {
     activeProject = projects[$('.carousel-item.active').attr('project')]
     fadeIcons(activeProject);
 })
+
+$('.nav-link').click( () => $('.navbar-toggler').click() )
