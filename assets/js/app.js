@@ -56,7 +56,7 @@ const projects = {
     },
     pokemon: {
         name: "Really Simple Pokemon",
-        description: 'This was my second week with JavaScript and my first week with JQuery. The code was messy, the functionality was questionable, but I had big idea and went with it.',
+        description: 'This was my second week with JavaScript and my first week with JQuery. The code was messy, the functionality was questionable, but I had a big idea and went with it.',
         link: "https://ngolba.github.io/Really-Simple-Pokemon/",
         techs: {
             html5: true,
@@ -92,7 +92,7 @@ const projects = {
     },
     giphy: {
         name: "Getting Giphy With It",
-        description: "Week six and we're on the topic of APIs. Overall, the requirement were simple, but one bonus requirement stumped the class. Instructions called for a one-click download button, but downloading images from external sources isn't supported with the download attribute in modern Chrome. Instead, I wrote a Chrome extension to turn external links ending in '.gif' into download links.",
+        description: "Week six and we're on the topic of APIs. Overall, the requirements were simple, but one bonus requirement stumped the class. Instructions called for a one-click download button, but downloading images from external sources isn't supported with the download attribute in modern Chrome. Instead, I wrote a Chrome extension to turn external links ending in '.gif' into download links.",
         link: "https://ngolba.github.io/Giphy-Project/",
         techs: {
             html5: true,
