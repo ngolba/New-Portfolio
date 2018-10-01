@@ -1,145 +1,108 @@
 const projects = {
     mood: {
-        name: '#Mood',
-        description: "This was the project for week 9 of my journey with Case Western Reserve. It uses three APIs to sort hundreds of movies and dynamically generates matches for each user's mood. Clean, refined, polished; but what did it take to get here?",
-        link: "https://fka-hufflepuff.github.io/api-project/",
-        techs: {
-            html5: true,
-            css: true,
-            js: true,
-            node: false,
-            react: false,
-            git: true,
-            sql: false,
-            bootstrap: true,
-            jquery: true,
-            chrome: false,
-            firebase: false,
-        }
+        html5: true,
+        css: true,
+        js: true,
+        node: false,
+        react: false,
+        git: true,
+        sql: false,
+        bootstrap: true,
+        jquery: true,
+        chrome: false,
+        firebase: false,
 
     },
     firstPortfolio: {
-        name: "My First Portfolio",
-        description: "This was week one. A simple exercise in HTML and CSS",
-        link: "https://ngolba.github.io/Basic-Portfolio/index.html",
-        techs: {
-            html5: true,
-            css: true,
-            js: false,
-            node: false,
-            react: false,
-            git: true,
-            sql: false,
-            bootstrap: false,
-            jquery: false,
-            chrome: false,
-            firebase: false,
-        }
+        html5: true,
+        css: true,
+        js: false,
+        node: false,
+        react: false,
+        git: true,
+        sql: false,
+        bootstrap: false,
+        jquery: false,
+        chrome: false,
+        firebase: false,
     },
     hangman: {
-        name: "Really Demeaning Hangman",
-        description: "Week three was my first exposure to JavaScript: a simple hangman game with a sense of humor.",
-        link: "https://ngolba.github.io/Word-Guess-Game/",
-        techs: {
-            html5: true,
-            css: true,
-            js: true,
-            node: false,
-            react: false,
-            git: true,
-            sql: false,
-            bootstrap: true,
-            jquery: false,
-            chrome: false,
-            firebase: false
-        }
+        html5: true,
+        css: true,
+        js: true,
+        node: false,
+        react: false,
+        git: true,
+        sql: false,
+        bootstrap: true,
+        jquery: false,
+        chrome: false,
+        firebase: false
     },
     pokemon: {
-        name: "Really Simple Pokemon",
-        description: 'This was my second week with JavaScript and my first week with JQuery. The code was messy, the functionality was questionable, but I had a big idea and went with it.',
-        link: "https://ngolba.github.io/Really-Simple-Pokemon/",
-        techs: {
-            html5: true,
-            css: true,
-            js: true,
-            node: false,
-            react: false,
-            git: true,
-            sql: false,
-            bootstrap: true,
-            jquery: true,
-            chrome: false,
-            firebase: false
-        }
+        html5: true,
+        css: true,
+        js: true,
+        node: false,
+        react: false,
+        git: true,
+        sql: false,
+        bootstrap: true,
+        jquery: true,
+        chrome: false,
+        firebase: false
     },
     trivia: {
-        name: "Trivia or Whatever",
-        description: 'Just a trivia game I got bored of making and made snake with JavaScript instead.',
-        link: "https://ngolba.github.io/TriviaGame/",
-        techs: {
-            html5: true,
-            css: true,
-            js: true,
-            node: false,
-            react: false,
-            git: true,
-            sql: false,
-            bootstrap: true,
-            jquery: true,
-            chrome: false,
-            firebase: false
-        }
+        html5: true,
+        css: true,
+        js: true,
+        node: false,
+        react: false,
+        git: true,
+        sql: false,
+        bootstrap: true,
+        jquery: true,
+        chrome: false,
+        firebase: false
     },
     giphy: {
-        name: "Getting Giphy With It",
-        description: "Week six and we're on the topic of APIs. Overall, the requirements were simple, but one bonus requirement stumped the class. Instructions called for a one-click download button, but downloading images from external sources isn't supported with the download attribute in modern Chrome. Instead, I wrote a Chrome extension to turn external links ending in '.gif' into download links.",
-        link: "https://ngolba.github.io/Giphy-Project/",
-        techs: {
-            html5: true,
-            css: true,
-            js: true,
-            node: false,
-            react: false,
-            git: true,
-            sql: false,
-            bootstrap: true,
-            jquery: true,
-            chrome: true,
-            firebase: false
-        }
+        html5: true,
+        css: true,
+        js: true,
+        node: false,
+        react: false,
+        git: true,
+        sql: false,
+        bootstrap: true,
+        jquery: true,
+        chrome: true,
+        firebase: false
     },
     rps: {
-        name: "Online Rock-Paper-Scissors",
-        description: "Using Firebase, I created a rock-paper-scissors game that can be played by two with a queue for others.",
-        link: "https://ngolba.github.io/RPS-Multiplayer/",
-        techs: {
-            html5: true,
-            css: true,
-            js: true,
-            node: false,
-            react: false,
-            git: true,
-            sql: false,
-            bootstrap: true,
-            jquery: true,
-            chrome: false,
-            firebase: true
-        }
+        html5: true,
+        css: true,
+        js: true,
+        node: false,
+        react: false,
+        git: true,
+        sql: false,
+        bootstrap: true,
+        jquery: true,
+        chrome: false,
+        firebase: true
     },
     reset: {
-        techs: {
-            html5: false,
-            css: false,
-            js: false,
-            node: false,
-            react: false,
-            git: false,
-            sql: false,
-            bootstrap: false,
-            jquery: false,
-            chrome: false,
-            firebase: false
-        }
+        html5: false,
+        css: false,
+        js: false,
+        node: false,
+        react: false,
+        git: false,
+        sql: false,
+        bootstrap: false,
+        jquery: false,
+        chrome: false,
+        firebase: false
     }
 }
 
@@ -206,21 +169,15 @@ const fadeIcons = (project) => {
     }
 }
 
-const updateCarouselData = (project) => {
-    $('#projectTitle').text(project.name);
-    $('#descriptionText').text(project.description);
-    $('#carouselLink').attr('href', project.link);
-    fadeIcons(project.techs);
-}
 
 $(document).ready(() => {
-    updateCarouselData(projects.mood);
+    fadeIcons(projects.mood);
     $('#portfolioCarousel').carousel({
         interval: 0
     });
 })
 
-$('#portBtn').click(() => {
+$('.portBtn').click(() => {
     $(".contactPage").slideUp(500)
     $('#aboutMe').slideUp(500)
     $('#footer').delay(1000).slideDown(500)
@@ -229,27 +186,27 @@ $('#portBtn').click(() => {
         backgroundPositionY: '0%',
         backgroundPositionX: '0%'
     })
-    
+
 })
 
 $('#contactBtn').click(() => {
     $('#aboutMe').slideUp(500)
     $('#portfolio').slideUp(500)
     $('#footer').delay(500).slideUp(500)
-    $('.backgroundImg').delay(500).animate({
+    $('.backgroundImg').delay(1000).animate({
         backgroundPositionX: '100%'
     }, 500).delay(200).animate({
         backgroundPositionY: '80%'
     }, 500)
     $('.contactPage').delay(1500).slideDown(500);
-    $('#contactJumbo').delay(4000).fadeIn(500);
+    $('#contactJumbo').delay(4500).fadeIn(500);
 })
 
 $('#homeBtn').click(() => {
     $('#aboutMe').delay(1500).slideDown(500)
     $('#portfolio').slideUp(500)
     $('#footer').delay(500).slideUp(500)
-    $('.backgroundImg').animate({
+    $('.backgroundImg').delay(1000).animate({
         backgroundPositionY: '100%',
         backgroundPositionX: '0%'
     })
@@ -260,6 +217,5 @@ $('#homeBtn').click(() => {
 
 $('#portfolioCarousel').on('slid.bs.carousel', () => {
     activeProject = projects[$('.carousel-item.active').attr('project')]
-    updateCarouselData(activeProject);
-
+    fadeIcons(activeProject);
 })

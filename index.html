@@ -52,7 +52,7 @@
                             <a class="nav-link" href="#" id="homeBtn">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" id="portBtn">Portfolio</a>
+                            <a class="nav-link portBtn" href="#">Portfolio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#" id="contactBtn">Contact</a>
@@ -62,7 +62,7 @@
             </nav>
             <div class="container my-2" id="aboutMe">
                 <div class="container  rounded border" id="aboutHeader">
-                    <h1 class="text-center  mx-auto">Who am I?</h1>
+                    <h1 class="text-center  mx-auto">Have code. Will travel.</h1>
                 </div>
                 <div class="container my-2 p-4  rounded border" id="aboutBody">
                     <img class="img-fluid float-md-left float-sm-none rounded px-3" id="selfie" src="assets/images/headShot.png">
@@ -82,6 +82,7 @@
                         overcome any hurdle placed in front of me, and that I can have a positive impact on any team.
                         I'm
                         seeking a position that challenges me on a daily basis.</p>
+                        <button type="button" class="btn btn-dark portBtn">Tell me more.</button>
                 </div>
             </div>
             <div class="container my-2" id="portfolio" style="display: none">
@@ -99,24 +100,41 @@
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active" project="mood">
                                 <img src="assets/images/moodSS.PNG" class="d-block w-100" alt="First slide">
+                                <h5 class="text-center">#Mood <a href='https://fka-hufflepuff.github.io/api-project/' target="_empty"><i class="fas fa-external-link-alt fa-sm"></i></a></h5>
+                                <p class="text-center">This was the project for week 9 of my journey with Case Western
+                                    Reserve. It uses three APIs to sort hundreds of movies and dynamically generates
+                                    matches for each user's mood. Clean, refined, polished; but what did it take to get
+                                    here?</p>
                             </div>
                             <div class="carousel-item" project="firstPortfolio">
                                 <img src="assets/images/firstportfolioSS.PNG" class="d-block w-100" alt="Second slide">
+                                <h5 class="text-center">My First Portfolio <a href='https://ngolba.github.io/Basic-Portfolio/index.html' target="_empty"><i class="fas fa-external-link-alt fa-sm"></i></a></h5>
+                                <p class="text-center">This was week one. A simple exercise in HTML and CSS</p>
                             </div>
                             <div class="carousel-item" project="hangman">
                                 <img src="assets/images/hangmanSS.PNG" class="d-block w-100" alt="Third slide">
+                                <h5 class="text-center">Really Demeaning Hangman <a href='https://ngolba.github.io/Word-Guess-Game/' target="_empty"><i class="fas fa-external-link-alt fa-sm"></i></a></h5>
+                                <p class="text-center">Week three was my first exposure to JavaScript: a simple hangman game with a sense of humor.</p>
                             </div>
                             <div class="carousel-item" project="pokemon">
                                 <img src="assets/images/pokemongif.gif" class="d-block w-100" alt="Fourth slide">
+                                <h5 class="text-center">Really Simple Pokemon <a href='https://ngolba.github.io/Really-Simple-Pokemon/' target="_empty"><i class="fas fa-external-link-alt fa-sm"></i></a></h5>
+                                <p class="text-center">This was my second week with JavaScript and my first week with JQuery. The code was messy, the functionality was questionable, but I had a big idea and went with it.</p>
                             </div>
                             <div class="carousel-item" project="trivia">
                                 <img src="assets/images/triviaSS.PNG" class="d-block w-100" alt="Fifth slide">
+                                <h5 class="text-center">Trivia or Whatever <a href='https://ngolba.github.io/TriviaGame/' target="_empty"><i class="fas fa-external-link-alt fa-sm"></i></a></h5>
+                                <p class="text-center">Just a trivia game I got bored of making and made snake with JavaScript instead.</p>
                             </div>
                             <div class="carousel-item" project="giphy">
                                 <img src="assets/images/giphyCapture.PNG" class="d-block w-100" alt="Sixth slide">
+                                <h5 class="text-center">Getting Giphy With It <a href='https://ngolba.github.io/Giphy-Project/' target="_empty"><i class="fas fa-external-link-alt fa-sm"></i></a></h5>
+                                <p class="text-center">Week six and we're on the topic of APIs. Overall, the requirements were simple, but one bonus requirement stumped the class. Instructions called for a one-click download button, but downloading images from external sources isn't supported with the download attribute in modern Chrome. Instead, I wrote a Chrome extension to turn external links ending in '.gif' into download links.</p>
                             </div>
                             <div class="carousel-item" project="rps">
                                 <img src="assets/images/rpsfullScreen.PNG" class="d-block w-100" alt="Seventh slide">
+                                <h5 class="text-center">Online Rock-Paper-Scissors <a href='https://ngolba.github.io/RPS-Multiplayer/' target="_empty"><i class="fas fa-external-link-alt fa-sm"></i></a></h5>
+                                <p class="text-center">Using Firebase, I created a rock-paper-scissors game that can be played by two with a queue for others.</p>
                             </div>
                         </div>
                         <a class="carousel-control-prev carouselArrow" href="#portfolioCarousel" role="button"
@@ -129,11 +147,6 @@
                             <i class="fas fa-arrow-right"></i>
                             <span class="sr-only">Next</span>
                         </a>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title text-center" id="carouselHeader"><span id="projectTitle"></span>
-                            <a href='#' target="_empty" id="carouselLink"><i class="fas fa-external-link-alt fa-sm"></i></a></h5>
-                        <p class="card-text text-center" id="descriptionText"></p>
                     </div>
                 </div>
             </div>
