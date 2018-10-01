@@ -142,14 +142,29 @@ a {
     color: black;
 }
 
+.carousel-indicators .active {
+    background-color: #b1b1b1  !important;
+}
+.carousel-indicators li {
+    width: .625rem  !important;
+    height: .625rem  !important;
+    border-radius: 50%  !important;
+    background-color: #ccc8c880  !important;
+}
+
+.carousel-indicators {
+    top: 10px !important;
+    bottom: unset !important;
+}
+
 .carouselArrow{
     color: black !important;
 }
-/* font-family: 'Playfair Display', serif;
-font-family: 'Roboto Mono', monospace; */
+
 #contactJumbo {
     background-color: rgba(214, 214, 214, 0.822);
     margin: 20% auto;
+    max-width: 500px;
 }
 
 #jumboWrapper {
