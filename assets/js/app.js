@@ -141,20 +141,6 @@ const textScroll = (text, speed, domElement) => {
     }, speed)
 }
 
-let totalTime = 0;
-for (let i = 0; i < (greetings.length + 1); i++) {
-    if (i === greetings.length) {
-        setTimeout(() => {
-            $('#slideBox').slideDown(500);
-        }, totalTime)
-    } else {
-        setTimeout(() => {
-            textScroll(greetings[i], 75, greetingDoms[i])
-        }, totalTime)
-        totalTime += (greetings[i].length * 75)
-    }
-}
-
 const fadeIcons = (project) => {
     for (let key in project) {
         if (project[key] === true) {
@@ -169,6 +155,21 @@ const fadeIcons = (project) => {
     }
 }
 
+$(window).on('load', () => {
+    let totalTime = 0;
+    for (let i = 0; i < (greetings.length + 1); i++) {
+        if (i === greetings.length) {
+            setTimeout(() => {
+                $('#slideBox').slideDown(500);
+            }, totalTime)
+        } else {
+            setTimeout(() => {
+                textScroll(greetings[i], 75, greetingDoms[i])
+            }, totalTime)
+            totalTime += (greetings[i].length * 75)
+        }
+    }
+})
 
 $(document).ready(() => {
     fadeIcons(projects.mood);

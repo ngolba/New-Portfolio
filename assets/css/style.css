@@ -11,7 +11,7 @@
 }
 
 .backgroundImg {
-    background-image: url("../images/mergedHDQuad.jpg");
+    background-image: url("../images/mergedHDQuadCompressed.jpg");
     background-repeat: no-repeat;
     background-position-x: 100%;
     height: 100%;
@@ -25,12 +25,8 @@
 }
 
 body {
-    /* background-image: url("../images/mergedHD2.jpg");
-    background-repeat: no-repeat;
-    background-position: 100%; */
     height: 100vh;
     width: 100%;
-    /* background-attachment: fixed; */
 }
 
 /* Photo by Tyler Lastovich on Unsplash */
@@ -167,18 +163,16 @@ a {
     max-width: 500px;
 }
 
-#jumboWrapper {
 
-}
 @media (min-width: 1921px) {
     .backgroundImg {
-        background-image: url('../images/merged4kQuad.jpg')
+        background-image: url('../images/merged4kQuadCompressed.jpg')
     }
 }
 
 @media (max-width: 1920px) {
     .backgroundImg {
-        background-image: url('../images/mergedHDQuad.jpg')
+        background-image: url('../images/mergedHDQuadCompressed.jpg')
     }
 }
 
