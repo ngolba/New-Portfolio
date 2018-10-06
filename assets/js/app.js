@@ -91,6 +91,19 @@ const projects = {
         chrome: false,
         firebase: true
     },
+    liri: {
+        html5: false,
+        css: false,
+        js: true,
+        node: true,
+        react: false,
+        git: true,
+        sql: false,
+        bootstrap: false,
+        jquery: false,
+        chrome: false,
+        firebase: false
+    },
     reset: {
         html5: false,
         css: false,
