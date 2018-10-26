@@ -104,7 +104,7 @@ const projects = {
         chrome: false,
         firebase: false
     },
-    liri: {
+    bamazon: {
         html5: false,
         css: false,
         js: true,
