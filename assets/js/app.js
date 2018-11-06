@@ -117,6 +117,19 @@ const projects = {
         chrome: false,
         firebase: false
     },
+    nff: {
+        html5: true,
+        css: true,
+        js: true,
+        node: true,
+        react: false,
+        git: true,
+        sql: true,
+        bootstrap: false,
+        jquery: true,
+        chrome: false,
+        firebase: false
+    },
     reset: {
         html5: false,
         css: false,
